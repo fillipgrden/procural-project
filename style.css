@@ -1,0 +1,514 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* Modules will scale with document */
+.header {
+    font-size: 1.5rem;
+}
+
+.footer {
+    font-size: 0.75rem;
+}
+
+.sidebar {
+    font-size: 0.85rem;
+}
+
+/* Type will scale with modules */
+h1 {
+    font-size: 3em;
+    margin: 15px 0px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 15px 0px;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 15px 0px;
+}
+
+p {
+    margin: 15px 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.padding {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav {
+    box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .2);
+}
+
+nav ul.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #081c3d;
+    transition: all .4s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #204887;
+}
+
+nav p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    display: inline-block;
+    color: #081c3d;
+}
+
+nav p span {
+    font-size: 8px;
+}
+
+nav a img {
+    height: 50px;
+}
+
+.main-head {
+    height: 100vh;
+    width: 100%;
+}
+
+.main-head div {
+    height: 100%;
+    width: 100%;
+}
+
+.main-head .container-outer {
+    position: relative;
+}
+
+.main-head .container-outer .background-inner {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.main-head .container-outer .display {
+    opacity: 1;
+}
+
+.main-head .container-outer .first {
+    background-image: url("img/aerial-view-architecture-buildings-681335.jpg");
+}
+
+.main-head .container-outer .first .mask {
+    background-color: rgba(8, 28, 61, 0.6);
+}
+
+.main-head .container-outer .second {
+    background-image: url("img/aerial-shot-building-business-2226458.jpg");
+}
+
+.main-head .container-outer .third {
+    background-image: url("img/architecture-building-cargo-containers-1267325.jpg");
+}
+
+.main-head .mask {
+    position: absolute;
+    display: flex;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(8, 28, 61, 0.6);
+}
+
+.main-head .container-inner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.main-head .show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.main-head .container-inner-content .btn {
+    margin-top: 30px;
+    background: #081c3d;
+    border: 0;
+}
+
+.main-head .container-inner-content .btn:hover {
+    background: #204887;
+}
+
+.about-container p {
+    color: #081c3d;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #081c3d;
+}
+
+#about .container {
+    opacity: 0;
+    transition: all .4s;
+}
+
+#about .show {
+    opacity: 1;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#offer .bg {
+    height: 200vh;
+    background-image: url("img/adventure-asphalt-clouds-416974.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#offer .bg .mask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(8, 28, 61, 0.6);
+}
+
+#offer .bg .mask .delivers-content {
+    background: white;
+    border-bottom: 3px solid #081c3d;
+    border-top: 3px solid #081c3d;
+}
+
+#offer .bg .mask .delivers-content .delivers-header {
+    justify-content: center;
+    color: #081c3d;
+    margin-bottom: 30px;
+}
+
+#offer .bg .mask .delivers-content .delivers-images {
+    justify-content: space-between;
+}
+
+#offer .bg .mask .delivers-content .delivers-images img {
+    filter: grayscale(1);
+    transition: all 0.4s;
+}
+
+#offer .bg .mask .delivers-content .delivers-images img:hover {
+    filter: grayscale(0);
+}
+
+#offer .background  {
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#offer .background .mask-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(8, 28, 61, 0.6);
+}
+
+#offer .background .mask-outer h3 {
+    color: #ffffff;
+}
+
+#offer .mechanic {
+    background-image: url("img/garage-hanging-mechanic-162553.jpg");
+}
+
+#offer .automatic {
+    background-image: url("img/auto-automatic-automobile-2027045.jpg");
+}
+
+#offer .bhp {
+    background-image: url("img/architecture-blur-bright-1329061.jpg");
+}
+
+#offer .chemistry {
+    background-image: url("img/biochemistry-biology-blue-2280571.jpg");
+}
+
+#offer .assembly {
+    background-image: url("img/assemble-bolt-builder-1571175.jpg");
+}
+
+#offer .industrial {
+    background-image: url("img/blur-bottle-chemistry-248152.jpg");
+}
+
+#offer .tools {
+    background-image: url("img/hammer-hand-tools-measuring-tape-175039.jpg");
+}
+
+#offer .pneumatic {
+    background-image: url("img/auto-automatic-automobile-2027045.jpg");
+}
+
+#offer .electrical {
+    background-image: url("img/art-big-data-blur-373543 (1).jpg");
+}
+
+#contact {
+    background-color: #081c3d;
+}
+
+
+#contact h2 {
+    padding-left: 30px;
+}
+
+#contact h2,
+#contact span,
+#contact a,
+#contact i,
+#contact p {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+#contact .flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contact .vcard {
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: all .8s;
+}
+
+#contact .form-container {
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: all .8s;
+}
+
+#contact .show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#contact .flex i {
+    padding-right: 15px;
+}
+
+#contact .flex i:hover,
+#contact .flex a:hover {
+    color: #204887;
+    text-decoration: none;
+}
+
+#contact .flex button {
+    background-color: #204887;
+    border: 2px solid #204887;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+#contact .flex button:hover {
+    background-color: transparent;
+}
+
+footer {
+    background-color: #204887;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.background-conditions {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conditions {
+    background-image: url("img/logistic.jpg");
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.conditions-content {
+    background: rgba(8, 28, 61, 0.8);
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.comeback-link {
+    color: white;
+    background: #081c3d;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.comeback-link:hover {
+    background: #204887;
+    color: white;
+    text-decoration: none;
+}
+
+.head-side {
+    min-height: 100vh;
+}
+
+.side-content {
+    min-height: 100vh;
+    background-image: url("img/action-business-cargo-2449454.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 0;
+}
+
+.side-content .mask {
+    min-height: 100%;
+    background: rgba(8, 28, 61, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-content .mask .modal {
+    color: #081c3d;
+}
+
+.side-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-title a {
+    margin: 15px 0 ;
+    text-align: center;
+}
+
+.side-title .comeback-link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.img {
+    height: 200px;
+}
+
+.list li{
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    font-size: 2em;
+}
+
+.side-offer {
+    padding-top: 90px;
+    background: #081c3d;
+    color: #ffffff;
+}
+
+.side-offer h2 {
+    border-bottom: 3px solid #ffffff;
+}
+
+.side-offer a {
+    color: #ffffff;
+}
+
+.side-offer a:hover {
+    color: #204887;
+    text-decoration: none;
+    list-style: disc;
+}
+
+.side-offer .modal {
+    color: #081c3d;
+}
